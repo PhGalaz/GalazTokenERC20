@@ -1929,6 +1929,12 @@
     "version": "0.8.6+commit.11564f7e.Emscripten.clang"
   },
   "networks": {
+    "10001": {
+      "events": {},
+      "links": {},
+      "address": "0xA5466c1C70ca0Fe67ffa85be10088F6d14f81AEC",
+      "transactionHash": "0x83ad82669f05d2dbd61df71c70d22b58d0e12c2942c50105b5f47938b2cd02e0"
+    },
     "80001": {
       "events": {},
       "links": {},
@@ -1937,7 +1943,7 @@
     }
   },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-10T23:40:49.939Z",
+  "updatedAt": "2022-04-12T04:09:26.824Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Implementation of the {IERC165} interface. Contracts may inherit from this and call {_registerInterface} to declare their support of an interface.",

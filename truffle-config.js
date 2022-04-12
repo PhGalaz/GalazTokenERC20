@@ -36,7 +36,7 @@ module.exports = {
    */
   plugins: ['truffle-plugin-verify'],
   api_keys: {
-    polygonscan: 'JIP9W16BEB2UE1V7XYQC2UQUZEMP7GINBY'
+    polygonscan: ''
   },
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
@@ -50,8 +50,13 @@ module.exports = {
      port: 8545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
+    // Polygon Matic
     matic: {
       provider: () => new HDWalletProvider(mnemonic, `https://matic-mumbai.chainstacklabs.com`),
+      mnemonic: mnemonic,
+      numberOfAddresses: 1,
+      shareNonce: true,
+      derivationPath: "m/44'/0'/0'/0/",
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
@@ -59,6 +64,13 @@ module.exports = {
       networkCheckTimeout: 1000000,
       timeoutBlocks: 200
     },
+    // SmartBch
+    greyh: {
+      // provider: () => new HDWalletProvider(mnemonic, `https://smartbch.greyh.at`), // SmartBch mainnet
+      provider: () => new HDWalletProvider(mnemonic, `https://moeing.tech:9545`), // Amber testnet
+      mnemonic: mnemonic,
+      network_id: "*"
+    }
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port

@@ -5354,6 +5354,12 @@
     "version": "0.8.6+commit.11564f7e.Emscripten.clang"
   },
   "networks": {
+    "10001": {
+      "events": {},
+      "links": {},
+      "address": "0xD4219582bA4b5C74259946c7E2f27CB48a5d9791",
+      "transactionHash": "0xb9aa8459ff85f602c9b0d771bb671a96b7b85f785251c576ed7cfe5f6eca1c79"
+    },
     "80001": {
       "events": {},
       "links": {},
@@ -5362,7 +5368,7 @@
     }
   },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-09T21:34:08.593Z",
+  "updatedAt": "2022-04-12T04:11:18.941Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Collection of functions related to the address type",

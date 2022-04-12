@@ -4248,6 +4248,12 @@
     "version": "0.8.6+commit.11564f7e.Emscripten.clang"
   },
   "networks": {
+    "10001": {
+      "events": {},
+      "links": {},
+      "address": "0x05dcdF1F0890B31b08a0d2070Fedb56ae021dEcF",
+      "transactionHash": "0x2084197634652ede36716e4bbd66951aae955e1dbc46385be41b3bbd3fb46f2f"
+    },
     "80001": {
       "events": {
         "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
@@ -4276,7 +4282,7 @@
     }
   },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-10T23:40:09.355Z",
+  "updatedAt": "2022-04-12T04:08:55.050Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Contract module which provides a basic access control mechanism, where there is an account (an owner) that can be granted exclusive access to specific functions. By default, the owner account will be the one that deploys the contract. This can later be changed with {transferOwnership}. This module is used through inheritance. It will make available the modifier `onlyOwner`, which can be applied to your functions to restrict their use to the owner.",

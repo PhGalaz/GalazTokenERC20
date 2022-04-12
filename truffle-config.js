@@ -36,7 +36,7 @@ module.exports = {
    */
   plugins: ['truffle-plugin-verify'],
   api_keys: {
-    polygonscan: ''
+    polygonscan: 'JIP9W16BEB2UE1V7XYQC2UQUZEMP7GINBY'
   },
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
@@ -65,8 +65,13 @@ module.exports = {
       timeoutBlocks: 200
     },
     // SmartBch
+    smart: {
+      provider: () => new HDWalletProvider(mnemonic, `https://smartbch.greyh.at`), // SmartBch mainnet
+      mnemonic: mnemonic,
+      network_id: "*"
+    },
+    // Amber testnet
     greyh: {
-      // provider: () => new HDWalletProvider(mnemonic, `https://smartbch.greyh.at`), // SmartBch mainnet
       provider: () => new HDWalletProvider(mnemonic, `https://moeing.tech:9545`), // Amber testnet
       mnemonic: mnemonic,
       network_id: "*"

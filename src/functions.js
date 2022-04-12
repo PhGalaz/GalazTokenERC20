@@ -1,3 +1,10 @@
+
+// balance ERC20
+async function balance(address){
+  const balance = await GTContract.methods.balanceOf(address).call();
+}
+
+// tx
 async function addOwnerAddressToWhiteListTier1(){
 
   var tx = {
@@ -23,10 +30,10 @@ async function addOwnerAddressToWhiteListTier1(){
   const receipt = await web3.eth.sendSignedTransaction(signed.rawTransaction)
 }
 
+
+
 // Consult typeform
 // const axios = require('axios');
-
-
 // async function typeform(){
 //   const resp = await axios.get("https://api.typeform.com/forms", {
 //     headers: {
@@ -46,9 +53,9 @@ async function addOwnerAddressToWhiteListTier1(){
 
 
 // Estimate gas
-// web3.eth.estimateGas({
-//   to: '0x984c0572dD574033925Aa18e8662A6bddC4CFe69',
-//   from: "0x86014da74e6dc59Aa26EDb72BbA76bcc8f923Db1",
-//   data: encodedABI
-// })
-// .then(console.log);
+web3.eth.estimateGas({
+  to: '0x984c0572dD574033925Aa18e8662A6bddC4CFe69',
+  from: "0x86014da74e6dc59Aa26EDb72BbA76bcc8f923Db1",
+  data: encodedABI
+})
+.then(console.log);
